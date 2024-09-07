@@ -371,7 +371,7 @@ export default {
       height: calc(100%);
       position: absolute;
       top: 0;
-      right: 120px;
+      right: 0;
       img {
         width: 100%;
         position: sticky;
