@@ -1,0 +1,85 @@
+@import url("../fonts/Inter/stylesheet.css");
+@import url("../fonts/Montserrat/stylesheet.css");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+:root {
+    --governor-bay-100: #e1e7f8;
+    --governor-bay-50: #f2f4fc;
+    --governor-bay-200: #c9d4f4;
+    --governor-bay-300: #a4b9ec;
+    --governor-bay-400: #7995e1;
+    --governor-bay-500: #5971d8;
+    --governor-bay-600: #4556cb;
+    --governor-bay-700: #3c46be;
+    --governor-bay-800: #353a98;
+    --governor-bay-900: #2f3479;
+    --governor-bay-950: #21224a;
+    --black: #0d0f10;
+    --gray-dark: #191c1d;
+    --white: #f9f9f9;
+    --gray-light: #6b6d6d;
+    --violet: #824baf;
+    --blue: #3c46be;
+}
+:root {
+    --font-family: "Montserrat", sans-serif;
+    --second-family: "Inter", sans-serif;
+}
+body {
+    background: var(--black);
+}
+.main-container {
+    max-width: 1040px;
+    margin: 0 auto;
+}
+.section-title {
+    width: fit-content;
+    position: relative;
+    padding: 16px 32px;
+    margin: 0 auto;
+    margin-bottom: 32px;
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 32px;
+    color: var(--white);
+    &::before {
+        content: "";
+        width: 13px;
+        height: 13px;
+        background-image: url("@/assets/img/icons/title-border-top.svg");
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    &::after {
+        content: "";
+        width: 13px;
+        height: 13px;
+        background-image: url("@/assets/img/icons/title-border-bottom.svg");
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+}
+.swiper-button-prev {
+    width: 10px;
+    height: 14px;
+    background: url("@/assets/img/icons/prev.svg");
+    cursor: pointer;
+}
+.swiper-button-next {
+    width: 10px;
+    height: 14px;
+    background: url("@/assets/img/icons/next.svg");
+    cursor: pointer;
+}
+.swiper-pagination {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    color: #fff;
+}
