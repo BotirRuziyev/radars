@@ -335,7 +335,6 @@ export default {
         min-height: calc(100vh - 80px);
         position: relative;
         .home-title {
-          margin-top: -180px;
           .title-big {
             display: block;
             font-family: var(--font-family);
@@ -354,7 +353,7 @@ export default {
         }
       }
       .home-description {
-        max-width: 65vw;
+        max-width: 827px;
         backdrop-filter: blur(12px);
         background: rgba(107, 109, 109, 0.2);
         border-radius: 16px;
@@ -432,7 +431,7 @@ export default {
     }
     .workplace-title {
       position: absolute;
-      left: 152px;
+      left: 32px;
       bottom: 32px;
       z-index: 2;
       font-family: var(--font-family);
@@ -544,7 +543,7 @@ export default {
         display: none;
       }
       .projects-swiper-bottom {
-        max-width: calc(50%);
+        max-width: 540px;
         width: 100%;
         float: right;
         display: flex;
@@ -619,7 +618,7 @@ export default {
         border-radius: 24px;
         padding: 32px;
         form {
-          max-width: 43vw;
+          max-width: 568px;
           width: 100%;
           display: flex;
           flex-direction: column;
