@@ -646,6 +646,9 @@ export default {
             font-weight: 600;
             font-size: 16px;
             color: var(--white);
+            &:focus {
+              outline: none;
+            }
 
             &::placeholder {
               font-family: var(--font-family);
