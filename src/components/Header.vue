@@ -9,9 +9,9 @@
         </div>
         <nav class="header-nav__bar">
           <div class="nav-link">
-            <router-link to="#" class="nav-link__item"> Продукция </router-link>
-            <router-link to="#" class="nav-link__item"> Проекты </router-link>
-            <router-link to="#" class="nav-link__item"> Контакты </router-link>
+            <a href="#products" class="nav-link__item"> Продукция </a>
+            <a href="#projects" class="nav-link__item"> Проекты </a>
+            <a href="#contact" class="nav-link__item"> Контакты </a>
           </div>
           <div class="header-contact">
             <div class="email">

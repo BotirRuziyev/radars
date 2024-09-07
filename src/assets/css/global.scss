@@ -29,6 +29,9 @@
     --font-family: "Montserrat", sans-serif;
     --second-family: "Inter", sans-serif;
 }
+html {
+    scroll-behavior: smooth;
+}
 body {
     background: var(--black);
 }

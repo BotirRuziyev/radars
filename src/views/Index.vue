@@ -180,7 +180,7 @@ export default {
         </div>
       </div>
     </section>
-    <section class="projects">
+    <section id="projects" class="projects">
       <div class="main-container">
         <h2 class="section-title">Проекты</h2>
         <div class="projects-swiper">
@@ -266,7 +266,7 @@ export default {
         </div>
       </div>
     </section>
-    <section class="contact">
+    <section id="contact" class="contact">
       <div class="main-container">
         <h2 class="section-title">Свяжитесь с нами</h2>
         <div class="contact-in">
@@ -303,7 +303,9 @@ export default {
 <style lang="scss">
 .index-page {
   .home {
-    position: relative;
+    .main-container {
+      position: relative;
+    }
     &::before {
       content: "";
       width: 100%;
@@ -318,57 +320,52 @@ export default {
       transform: translateX(-50%);
     }
     .home-in {
-      padding-top: 96px;
+      padding-top: 80px;
       position: relative;
       z-index: 2;
 
       .home-title__wrapper {
         background: url("@/assets/img/home-title-border.png");
         background-size: cover;
-        padding: 132px 0 218px;
+        padding: 226px 0 310px;
         margin-bottom: 102px;
         .home-title {
           .title-big {
             display: block;
             font-family: var(--font-family);
             font-weight: 700;
-            font-size: 220px;
-            line-height: 268px;
-            text-align: center;
-            color: var(--violet);
-            margin-bottom: 5px;
+            font-size: 64px;
+            color: var(--white);
           }
           .title-small {
             display: block;
+            max-width: 321px;
             font-family: var(--font-family);
             font-weight: 600;
-            font-size: 32px;
-            line-height: 39px;
-            text-align: center;
+            font-size: 20px;
             color: var(--white);
           }
         }
       }
       .home-description {
+        max-width: 827px;
         backdrop-filter: blur(12px);
         background: rgba(107, 109, 109, 0.2);
         border-radius: 16px;
-        padding: 32px 87.5px;
+        padding: 32px 208px 32px 32px;
         font-family: var(--font-family);
         font-weight: 600;
         font-size: 32px;
-        text-align: center;
         color: var(--white);
       }
     }
     .home-bg {
       max-width: 688px;
       width: 100%;
-      height: calc(100% + 100px);
+      height: calc(100%);
       position: absolute;
       top: 0;
-      left: 50%;
-      transform: translateX(-50%);
+      right: 0;
       img {
         width: 100%;
         position: sticky;
