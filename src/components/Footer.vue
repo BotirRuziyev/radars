@@ -11,10 +11,10 @@
           </div>
           <div class="footer-contact">
             <div class="label">Свяжитесь с нами</div>
-            <a href="mail:info@flydrone.ru" class="email-link"
+            <a href="mailto:info@flydrone.ru" class="email-link"
               >info@flydrone.ru</a
             >
-            <a href="" class="telegram-link">
+            <a href="#contact" class="telegram-link">
               <svg
                 width="20"
                 height="17"
@@ -97,7 +97,10 @@
           margin-bottom: 16px;
           transition: 0.3s;
           &:hover {
-            color: var(--blue);
+            color: var(--governor-bay-700);
+          }
+          &:active {
+            color: var(--governor-bay-500);
           }
         }
         .telegram-link {
@@ -109,18 +112,11 @@
           border-radius: 4px;
           background: var(--white);
           transition: 0.3s;
-          svg {
-            path {
-              transition: 0.3s;
-            }
-          }
           &:hover {
-            background: var(--violet);
-            svg {
-              path {
-                fill: var(--white);
-              }
-            }
+            background: var(--governor-bay-700);
+          }
+          &:active {
+            background: var(--governor-bay-500);
           }
         }
       }
@@ -141,7 +137,10 @@
           .phone-link {
             transition: 0.3s;
             &:hover {
-              color: var(--blue);
+              color: var(--governor-bay-700);
+            }
+            &:active {
+              color: var(--governor-bay-500);
             }
           }
         }

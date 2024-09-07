@@ -15,15 +15,15 @@
           </div>
           <div class="header-contact">
             <div class="email">
-              <router-link to="mail:info@flydrone.ru">
+              <a href="mailto:info@flydrone.ru">
                 <img src="@/assets/img/icons/message.svg" alt="email icon" />
                 <span>info@flydrone.ru</span>
-              </router-link>
+              </a>
             </div>
             <div class="phone">
-              <router-link to="tel:+7">
+              <a href="tel:+77777777777">
                 <img src="@/assets/img/icons/phone.svg" alt="phone icon" />
-              </router-link>
+              </a>
             </div>
           </div>
         </nav>
@@ -35,6 +35,7 @@
 <style lang="scss" scoped>
 .header {
   width: 100%;
+  padding: 8px 0;
   position: fixed;
   top: 0;
   left: 0;
@@ -62,7 +63,10 @@
           color: var(--white);
           transition: 0.3s;
           &:hover {
-            background-color: var(--gray-dark);
+            background: rgba(182, 182, 182, 0.2);
+          }
+          &:active {
+            background: rgba(255, 255, 255, 0.2);
           }
         }
       }

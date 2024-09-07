@@ -325,10 +325,15 @@ export default {
       z-index: 2;
 
       .home-title__wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         background: url("@/assets/img/home-title-border.png");
-        background-size: cover;
-        padding: 226px 0 310px;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
         margin-bottom: 102px;
+        min-height: calc(100vh - 80px);
+        position: relative;
         .home-title {
           .title-big {
             display: block;
@@ -643,9 +648,11 @@ export default {
             font-weight: 600;
             font-size: 16px;
             color: var(--white);
-            border: 0;
+            border: 2px solid transparent;
             &:focus {
               outline: none;
+              border: 2px solid var(--white);
+              background: var(--black);
             }
 
             &::placeholder {
@@ -657,6 +664,7 @@ export default {
           }
           input.error {
             border: 2px solid #c00;
+            background: var(--black);
           }
           .error-text {
             display: none;
@@ -685,7 +693,10 @@ export default {
           cursor: pointer;
           transition: 0.3s;
           &:hover {
-            background: #2d38ad;
+            background: var(--governor-bay-500);
+          }
+          &:active {
+            background: var(--governor-bay-400);
           }
         }
       }
