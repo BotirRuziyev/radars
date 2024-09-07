@@ -646,6 +646,7 @@ export default {
             font-weight: 600;
             font-size: 16px;
             color: var(--white);
+            border: 0;
             &:focus {
               outline: none;
             }
