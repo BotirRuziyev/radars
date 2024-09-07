@@ -335,6 +335,7 @@ export default {
         min-height: calc(100vh - 80px);
         position: relative;
         .home-title {
+          margin-top: -180px;
           .title-big {
             display: block;
             font-family: var(--font-family);
@@ -353,7 +354,7 @@ export default {
         }
       }
       .home-description {
-        max-width: 827px;
+        max-width: 65vw;
         backdrop-filter: blur(12px);
         background: rgba(107, 109, 109, 0.2);
         border-radius: 16px;
@@ -370,7 +371,7 @@ export default {
       height: calc(100%);
       position: absolute;
       top: 0;
-      right: 0;
+      right: 120px;
       img {
         width: 100%;
         position: sticky;
@@ -431,7 +432,7 @@ export default {
     }
     .workplace-title {
       position: absolute;
-      left: 32px;
+      left: 152px;
       bottom: 32px;
       z-index: 2;
       font-family: var(--font-family);
@@ -444,32 +445,24 @@ export default {
     overflow: hidden;
     .container {
       padding-top: 112px;
+      .default-content-container {
+        &:hover {
+          .marquee {
+            animation-play-state: paused !important;
+          }
+        }
+      }
     }
     .marquee-wrapper {
-      display: inline-flex;
-      white-space: nowrap;
-      &:hover {
-        .marquee {
-          animation-play-state: paused !important;
-        }
-      }
+      display: flex;
+      justify-content: end;
+
       &:nth-child(1) {
         margin-bottom: 16px;
-        .marquee {
-          animation-name: marqueeLeft;
-          animation-duration: 30s;
-          animation-timing-function: linear;
-          animation-iteration-count: infinite;
-        }
       }
       &:nth-child(2) {
-        display: flex;
-        justify-content: end;
         .marquee {
-          animation-name: marqueeRight;
-          animation-duration: 30s;
-          animation-timing-function: linear;
-          animation-iteration-count: infinite;
+          animation-duration: 25.7s;
         }
       }
       .marquee {
@@ -478,6 +471,10 @@ export default {
         margin: 8px;
         white-space: nowrap;
         position: relative;
+        animation-name: marquee;
+        animation-duration: 30s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
 
         a {
           width: 414px;
@@ -496,16 +493,7 @@ export default {
           }
         }
       }
-      @keyframes marqueeLeft {
-        0% {
-          transform: translate3d(0%, 0, 0);
-        }
-
-        100% {
-          transform: translate3d(-100%, 0, 0);
-        }
-      }
-      @keyframes marqueeRight {
+      @keyframes marquee {
         0% {
           transform: translate3d(0%, 0, 0);
         }
@@ -556,7 +544,7 @@ export default {
         display: none;
       }
       .projects-swiper-bottom {
-        max-width: 540px;
+        max-width: calc(50%);
         width: 100%;
         float: right;
         display: flex;
@@ -631,7 +619,7 @@ export default {
         border-radius: 24px;
         padding: 32px;
         form {
-          max-width: 568px;
+          max-width: 43vw;
           width: 100%;
           display: flex;
           flex-direction: column;
