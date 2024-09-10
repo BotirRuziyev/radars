@@ -78,9 +78,13 @@ export default {
             </h1>
           </div>
           <p class="home-description">
-            Надежное решение для обнаружения, контроля и противодействия БПЛА, а
-            также обеспечение безопасного применения беспилотников для
-            предприятий и субъектов РФ
+            Надежное решение <br />
+            для обнаружения, контроля <br />
+            и противодействия БПЛА, <br />
+            а также обеспечение <br />
+            безопасного применения <br />
+            беспилотников <br />
+            для предприятий и субъектов РФ
           </p>
         </div>
         <div class="home-bg">
@@ -273,8 +277,8 @@ export default {
           <div class="contact-form">
             <form>
               <div class="form-control">
-                <input type="text" placeholder="Имя" class="error" />
-                <span class="error-text error">Неверный формат ввода</span>
+                <input type="text" placeholder="Имя" class="" />
+                <span class="error-text">Неверный формат ввода</span>
               </div>
               <div class="form-control">
                 <input type="text" placeholder="Компания" />
@@ -328,9 +332,9 @@ export default {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        background: url("@/assets/img/home-title-border.png");
-        background-repeat: no-repeat;
-        background-size: 100% 100%;
+        // background: url("@/assets/img/home-title-border.png");
+        // background-repeat: no-repeat;
+        // background-size: 100% 100%;
         margin-bottom: 102px;
         min-height: calc(100vh - 80px);
         position: relative;
@@ -354,7 +358,7 @@ export default {
       }
       .home-description {
         max-width: 827px;
-        backdrop-filter: blur(12px);
+        backdrop-filter: blur(4px);
         background: rgba(107, 109, 109, 0.2);
         border-radius: 16px;
         padding: 32px 208px 32px 32px;
