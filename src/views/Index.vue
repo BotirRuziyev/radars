@@ -358,7 +358,7 @@ export default {
       }
       .home-description {
         max-width: 827px;
-        backdrop-filter: blur(4px);
+        backdrop-filter: blur(5px);
         background: rgba(107, 109, 109, 0.2);
         border-radius: 16px;
         padding: 32px 208px 32px 32px;
@@ -617,7 +617,7 @@ export default {
         align-items: center;
         justify-content: space-between;
         gap: 30px;
-        backdrop-filter: blur(12px);
+        backdrop-filter: blur(5px);
         background: rgba(107, 109, 109, 0.2);
         border-radius: 24px;
         padding: 32px;
