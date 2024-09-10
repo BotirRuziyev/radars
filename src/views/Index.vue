@@ -331,11 +331,7 @@ export default {
       .home-title__wrapper {
         display: flex;
         flex-direction: column;
-        // background: url("@/assets/img/home-title-border.png");
-        // background-repeat: no-repeat;
-        // background-size: 100% 100%;
-        margin-bottom: 102px;
-        min-height: calc(100vh - 80px);
+        margin-bottom: 326px;
         position: relative;
         .home-title {
           margin-top: 226px;
