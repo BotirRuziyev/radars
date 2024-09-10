@@ -312,14 +312,14 @@ export default {
     }
     &::before {
       content: "";
-      width: 100%;
-      height: 100%;
+      width: 1280px;
+      height: 1035px;
       background-image: url("@/assets/img/home-bg-blur.png");
       background-repeat: no-repeat;
       background-size: 1280px;
       background-position: center -250px;
       position: absolute;
-      top: 0;
+      top: -50px;
       left: 50%;
       transform: translateX(-50%);
     }
@@ -331,7 +331,6 @@ export default {
       .home-title__wrapper {
         display: flex;
         flex-direction: column;
-        justify-content: center;
         // background: url("@/assets/img/home-title-border.png");
         // background-repeat: no-repeat;
         // background-size: 100% 100%;
@@ -339,6 +338,7 @@ export default {
         min-height: calc(100vh - 80px);
         position: relative;
         .home-title {
+          margin-top: 226px;
           .title-big {
             display: block;
             font-family: var(--font-family);
