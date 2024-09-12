@@ -41,8 +41,28 @@
               </a>
             </div>
             <div class="item">
-              <div class="label">Юр. адрес</div>
-              <div class="location">Москва, Зоологическая улица, 26с2</div>
+              <div class="item-in">
+                <div class="label">Юр. адрес</div>
+                <div class="location">Москва, Зоологическая улица, 26с2</div>
+              </div>
+              <div class="telegram-link-mobile">
+                <a href="#contact" class="telegram-link">
+                  <svg
+                    width="17"
+                    height="15"
+                    viewBox="0 0 17 15"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M1.30533 6.477C5.59426 4.54163 8.4612 3.29073 9.90613 2.67708C13.9886 0.930527 14.8373 0.6237 15.3877 0.600098C15.5024 0.600098 15.7776 0.6237 15.9611 0.765312C16.0987 0.883322 16.1446 1.04854 16.1675 1.16655C16.1905 1.28456 16.2134 1.54418 16.1905 1.7566C15.9611 4.1404 15.0207 9.9701 14.5162 12.6371C14.3097 13.77 13.8969 14.1477 13.507 14.1949C12.6584 14.2657 11.9933 13.6048 11.1676 13.062C9.88319 12.1887 9.14926 11.6458 7.88781 10.7962C6.44287 9.80488 7.38323 9.26204 8.20891 8.38876C8.41532 8.15274 12.1997 4.63604 12.2685 4.30561C12.2685 4.25841 12.2914 4.1168 12.1997 4.04599C12.1079 3.97519 11.9933 3.99879 11.9015 4.02239C11.7639 4.04599 9.69971 5.46211 5.686 8.24715C5.08968 8.67199 4.56216 8.8608 4.08052 8.8608C3.553 8.8608 2.54384 8.55398 1.78697 8.29435C0.869553 7.98753 0.135618 7.82231 0.204424 7.30307C0.250295 7.04345 0.617263 6.76022 1.30533 6.477Z"
+                      fill="#191C1D"
+                    />
+                  </svg>
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -108,7 +128,7 @@
           height: 30px;
           display: flex;
           align-items: center;
-          justify-content: center;
+          padding-left: 4px;
           border-radius: 4px;
           background: var(--white);
           transition: 0.3s;
@@ -127,6 +147,14 @@
         flex-direction: column;
         gap: 23px;
         .item {
+          &:last-child {
+            display: flex;
+            justify-content: space-between;
+            align-items: end;
+            .telegram-link-mobile {
+              display: none;
+            }
+          }
           .phone-link,
           .location {
             font-family: var(--font-family);
@@ -141,6 +169,94 @@
             }
             &:active {
               color: var(--governor-bay-500);
+            }
+          }
+          .telegram-link {
+            width: 24px;
+            height: 24px;
+            display: flex;
+            align-items: center;
+            border-radius: 4px;
+            background: var(--white);
+            padding-left: 3.2px;
+            transition: 0.3s;
+            &:hover {
+              background: var(--governor-bay-700);
+            }
+            &:active {
+              background: var(--governor-bay-500);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 650px) {
+  .footer {
+    padding: 32px 0;
+    .footer-in {
+      flex-direction: column;
+      gap: 25px;
+      .left-block {
+        .footer-contact {
+          .telegram-link {
+            display: none;
+          }
+        }
+      }
+      .right-block {
+        .footer-contact {
+          .item {
+            &:last-child {
+              gap: 20px;
+              .telegram-link-mobile {
+                display: block;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 500px) {
+  .footer {
+    padding: 16px 0;
+    .footer-in {
+      .label {
+        font-size: 13px;
+        line-height: 16px;
+      }
+      .left-block {
+        .logo {
+          margin-bottom: 16px;
+          a {
+            gap: 8px;
+            img {
+              width: 24px;
+              height: 24px;
+            }
+            span {
+              font-weight: 600;
+              font-size: 16px;
+            }
+          }
+        }
+        .footer-contact {
+          .email-link {
+            font-size: 20px;
+            line-height: 24px;
+            margin-bottom: 0;
+          }
+        }
+      }
+      .right-block {
+        .footer-contact {
+          .item {
+            .phone-link {
+              font-size: 20px;
+              line-height: 24px;
             }
           }
         }
