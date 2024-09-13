@@ -14,7 +14,7 @@
             <a href="mailto:info@flydrone.ru" class="email-link"
               >info@flydrone.ru</a
             >
-            <a href="#contact" class="telegram-link">
+            <a href="https://t.me/+skL-zCzgC-k0ZmI0" class="telegram-link">
               <svg
                 width="20"
                 height="17"
@@ -46,7 +46,7 @@
                 <div class="location">Москва, Зоологическая улица, 26с2</div>
               </div>
               <div class="telegram-link-mobile">
-                <a href="#contact" class="telegram-link">
+                <a href="https://t.me/+skL-zCzgC-k0ZmI0" class="telegram-link">
                   <svg
                     width="17"
                     height="15"
@@ -110,7 +110,7 @@
           display: block;
           font-family: var(--font-family);
           font-weight: 400;
-          font-size: 24px;
+          font-size: 16px;
           text-decoration: underline;
           text-decoration-skip-ink: none;
           color: #f5f5f5;
