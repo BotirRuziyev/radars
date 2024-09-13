@@ -7,11 +7,17 @@ export default {
   },
   methods: {
     modalMenu() {
-      this.modal = !this.modal;
-      if (this.modal) {
-        document.querySelector("html").style.setProperty("overflow", "hidden");
-      } else {
-        document.querySelector("html").style.setProperty("overflow", "visible");
+      if (window.innerWidth < 992) {
+        this.modal = !this.modal;
+        if (this.modal) {
+          document
+            .querySelector("html")
+            .style.setProperty("overflow", "hidden");
+        } else {
+          document
+            .querySelector("html")
+            .style.setProperty("overflow", "visible");
+        }
       }
     },
   },
@@ -22,9 +28,9 @@ export default {
     <div class="main-container">
       <div class="header-in">
         <div class="logo">
-          <router-link to="/">
+          <a href="#">
             <img src="@/assets/img/logo.svg" alt="logo" />
-          </router-link>
+          </a>
         </div>
         <nav class="header-nav__bar">
           <div class="nav-link" :class="modal ? 'active' : ''">
@@ -93,6 +99,7 @@ export default {
           background: rgba(13, 15, 16, 0.2);
           border-radius: 8px;
           padding: 8px 24px;
+          user-select: none;
           font-family: var(--font-family);
           font-weight: 400;
           font-size: 16px;
